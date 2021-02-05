@@ -155,6 +155,7 @@ const UBUNTU: { [key: string]: string } = {
   "9.0.1": "-ubuntu-16.04",
   "10.0.0": "-ubuntu-18.04",
   "10.0.1": "-ubuntu-16.04",
+  "11.0.0": "-ubuntu-16.04",
   "11.0.0": "-ubuntu-20.04",
 };
 
