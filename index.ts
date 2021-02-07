@@ -47,7 +47,7 @@ const VERSIONS: Set<string> = getVersions([
   "8.0.0", "8.0.1",
   "9.0.0", "9.0.1",
   "10.0.0", "10.0.1",
-  "11.0.0",
+  "11.0.0", "11.0.1"
 ]);
 
 /** Gets the ordering of two (specific or minimum) LLVM versions. */
@@ -155,12 +155,13 @@ const UBUNTU: { [key: string]: string } = {
   "9.0.1": "-ubuntu-16.04",
   "10.0.0": "-ubuntu-18.04",
   "10.0.1": "-ubuntu-16.04",
-  "11.0.0": "-ubuntu-16.04",
+  "11.0.1": "-ubuntu-16.04",
   "11.0.0": "-ubuntu-20.04",
+  "11.0.1": "-ubuntu-20.04",
 };
 
 /** The latest supported LLVM version for the Linux (Ubuntu) platform. */
-const MAX_UBUNTU: string = "11.0.0";
+const MAX_UBUNTU: string = "11.0.1";
 
 /** Gets an LLVM download URL for the Linux (Ubuntu) platform. */
 function getLinuxUrl(version: string, options: Options): string | null {
