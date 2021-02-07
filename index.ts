@@ -222,6 +222,8 @@ function getUrl(platform: string, version: string, options: Options): string | n
 
 /** Gets the most recent specific LLVM version for which there is a valid download URL. */
 function getSpecificVersionAndUrl(platform: string, options: Options): [string, string] {
+  console.log(`options.forceVersion '${options.forceVersion}'...`);
+  console.log(`platform '${platform}'...`);
   if (options.forceVersion) {
     return [options.version, getUrl(platform, options.version, options)!];
   }
@@ -231,6 +233,8 @@ function getSpecificVersionAndUrl(platform: string, options: Options): [string, 
   }
 
   for (const specificVersion of getSpecificVersions(options.version)) {
+console.log(`options '${options}'...`);
+console.log(`specificVersion '${specificVersion}'...`);
     const url = getUrl(platform, specificVersion, options);
     if (url) {
       return [specificVersion, url];
