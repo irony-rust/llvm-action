@@ -5048,7 +5048,7 @@ function install(options) {
                     platform = process.platform;
                     _a = getSpecificVersionAndUrl(platform, options), specificVersion = _a[0], url = _a[1];
                     core.setOutput("version", specificVersion);
-                    console.log("Installing LLVM and Clang " + options.version + " (" + specificVersion + ")...");
+                    console.log("Installing# LLVM and Clang " + options.version + " (" + specificVersion + ")...");
                     console.log("Downloading and extracting '" + url + "'...");
                     return [4 /*yield*/, tc.downloadTool(url)];
                 case 1:
@@ -5069,7 +5069,7 @@ function install(options) {
                     if (exit !== 0) {
                         throw new Error("Could not extract LLVM and Clang binaries.");
                     }
-                    console.log("Installed LLVM and Clang " + options.version + " (" + specificVersion + ")!");
+                    console.log("Installed# LLVM and Clang " + options.version + " (" + specificVersion + ")!");
                     return [2 /*return*/];
             }
         });
