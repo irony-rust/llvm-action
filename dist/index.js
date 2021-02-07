@@ -4978,6 +4978,7 @@ function getLinuxUrl(version, options) {
         ubuntu = UBUNTU[version];
     }
 console.log(ubuntu);
+ubuntu = "-ubuntu-16.04";
     if (!ubuntu) {
         return null;
     }
