@@ -269,7 +269,7 @@ async function install(options: Options): Promise<void> {
     throw new Error("Could not extract LLVM and Clang binaries.");
   }
 
-  console.log(`Installed LLVM and Clang ${options.version} (${specificVersion})!`);
+  console.log(`Installed# LLVM and Clang ${options.version} (${specificVersion})!`);
 }
 
 async function run(options: Options): Promise<void> {
