@@ -4977,6 +4977,7 @@ function getLinuxUrl(version, options) {
     else {
         ubuntu = UBUNTU[version];
     }
+console.log(ubuntu);
     if (!ubuntu) {
         return null;
     }
@@ -5049,6 +5050,9 @@ function install(options) {
                     platform = process.platform;
                     _a = getSpecificVersionAndUrl(platform, options), specificVersion = _a[0], url = _a[1];
                     core.setOutput("version", specificVersion);
+console.log(platform);
+console.log(options);
+
                     console.log("Installing# LLVM and Clang " + options.version + " (" + specificVersion + ")...");
                     console.log("Downloading and extracting '" + url + "'...");
                     return [4 /*yield*/, tc.downloadTool(url)];
