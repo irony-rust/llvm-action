@@ -253,7 +253,7 @@ async function install(options: Options): Promise<void> {
   const [specificVersion, url] = getSpecificVersionAndUrl(platform, options);
   core.setOutput("version", specificVersion);
 
-  console.log(`Installing LLVM and Clang ${options.version} (${specificVersion})...`);
+  console.log(`Installing# LLVM and Clang ${options.version} (${specificVersion})...`);
   console.log(`Downloading and extracting '${url}'...`);
   const archive = await tc.downloadTool(url);
 
